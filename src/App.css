@@ -1,38 +1,60 @@
+body {
+  background-color: #DEC26D;
+}
 .App {
-  text-align: center;
-}
+  background-color: #F4A261;
+  min-height: 500px;
+  width: 400px;
+  
+ margin: 40px auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+#to-do-form input {
+  background-color: #599277;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #fff;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+#to-do-form input ::placeholder {
+  color:  rgb(255, 255, 255,0.5);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+#to-do-form input:focus,#to-do-form button:focus {
+  outline: none;
+
+}
+#to-do-form button {
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #246867;
+  cursor: pointer;
+  font-weight: bolder;
+  color: #fff;
+
+}
+.text{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: #E76F51;
+  font-weight: bold;
+  font-size: 40px;
+  animation-name: todo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ 
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes todo {
+  0% {color : #D2C06F; font-size: 20px;}
+  25% {color :#F4A261;font-size: 42px;}
+  50% {color: #8AB17D;font-size: 38px;}
+  100% {color: #599277;font-size: 45px;}
+  
 }
