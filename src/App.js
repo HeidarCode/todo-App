@@ -3,7 +3,7 @@ import "./App.css"
 import ListItem from "./ListItem"
 import {library} from "@fortawesome/fontawesome-svg-core"
 import {faTrash} from "@fortawesome/free-solid-svg-icons"
-
+import Possibility from "./Possibility"
 library.add(faTrash)
 class App extends React.Component {
   constructor(props) {
@@ -82,7 +82,10 @@ class App extends React.Component {
         <ListItem items = {this.state.items}
         deleteItem = {this.deleteItem}
         setUpdate = {this.setUpdate}/>
+       
+        
       </div>
+      <Possibility />
       </div>
     )
   }
